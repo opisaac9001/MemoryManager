@@ -1,0 +1,79 @@
+name: Bug report
+description: Report a reproducible problem in Memory Manager
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to report a problem. Remove personal file names, folder paths, and other private details from screenshots and diagnostic snapshots before submitting.
+  - type: input
+    id: version
+    attributes:
+      label: Memory Manager version
+      description: Shown in Memory Manager → About Memory Manager.
+      placeholder: For example, 3.3.1 (11)
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: For example, macOS 26.1
+    validations:
+      required: true
+  - type: input
+    id: mac
+    attributes:
+      label: Mac model
+      placeholder: For example, MacBook Air M3 or Mac mini M4
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Memory dashboard
+        - CPU dashboard
+        - Activity, battery, or disk
+        - Storage scanning or cleanup
+        - Insights or history
+        - Pause, quit, or force quit
+        - Menu bar
+        - Notifications
+        - Settings or Launch at Login
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Explain what you expected and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open…
+        2. Select…
+        3. See…
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or diagnostics
+      description: Add redacted screenshots, recordings, or a diagnostic snapshot (Memory → Export Diagnostic Snapshot…) if they help.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues for the same problem.
+          required: true
+        - label: I removed personal file names, paths, and other private details.
+          required: true

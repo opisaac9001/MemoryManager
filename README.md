@@ -9,10 +9,22 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/opisaac9001/MemoryManager/releases/latest">Download</a> ·
+  <a href="https://github.com/opisaac9001/MemoryManager/releases/latest"><img src="https://img.shields.io/github/v/release/opisaac9001/MemoryManager?style=for-the-badge&label=Download&logo=apple&logoColor=white&color=2F81F7" alt="Download the latest release"></a>
+  <img src="https://img.shields.io/badge/macOS-14%2B-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS 14 or later">
+  <a href="https://github.com/opisaac9001/MemoryManager/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/opisaac9001/MemoryManager/ci.yml?branch=main&style=for-the-badge&label=CI" alt="CI status"></a>
+  <a href="https://github.com/opisaac9001/MemoryManager/issues"><img src="https://img.shields.io/github/issues/opisaac9001/MemoryManager?style=for-the-badge&color=F5921A" alt="Open issues"></a>
+  <a href="https://github.com/opisaac9001/MemoryManager/discussions"><img src="https://img.shields.io/badge/GitHub-Discussions-24292F?style=for-the-badge&logo=github" alt="GitHub Discussions"></a>
+  <a href="https://discord.gg/Hw4nmXRehb"><img src="https://img.shields.io/badge/Discord-community-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Join the Discord community"></a>
+  <a href="https://buymeacoffee.com/envebookplayer"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-support-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=000000" alt="Support development on Buy Me a Coffee"></a>
+  <a href="./LICENSE.md"><img src="https://img.shields.io/badge/license-AGPL--3.0--only-663399?style=for-the-badge" alt="AGPL-3.0-only license"></a>
+</p>
+
+<p align="center">
+  <a href="#install">Install</a> ·
   <a href="#features">Features</a> ·
   <a href="#safety">Safety</a> ·
-  <a href="#building-from-source">Build</a>
+  <a href="#building-from-source">Build</a> ·
+  <a href="#important-links">Links</a>
 </p>
 
 ![Memory dashboard](docs/screenshots/memory.png)
@@ -145,7 +157,19 @@ project.yml                XcodeGen project definition
 
 ## Contributing
 
-Issues and pull requests are welcome. Please run the tests before opening a pull request, and keep to public macOS APIs. Features that need private APIs or administrator privileges are out of scope.
+Bug fixes, accessibility improvements, documentation, and focused features are welcome. Start with [CONTRIBUTING.md](CONTRIBUTING.md). Use [Discussions](https://github.com/opisaac9001/MemoryManager/discussions) for questions and early ideas, and Issues for reproducible bugs or agreed work. Features that need private APIs or administrator privileges are out of scope.
+
+For help, see [SUPPORT.md](SUPPORT.md) or join the [Discord](https://discord.gg/Hw4nmXRehb). Please report security problems privately as described in [SECURITY.md](SECURITY.md).
+
+## Important links
+
+| Resource | Link |
+| --- | --- |
+| Download | [Latest release](https://github.com/opisaac9001/MemoryManager/releases/latest) |
+| Questions and ideas | [GitHub Discussions](https://github.com/opisaac9001/MemoryManager/discussions) |
+| Bugs and tracked work | [GitHub Issues](https://github.com/opisaac9001/MemoryManager/issues) |
+| Community | [Discord](https://discord.gg/Hw4nmXRehb) |
+| Support development | [Buy Me a Coffee](https://buymeacoffee.com/envebookplayer) |
 
 ## License
 

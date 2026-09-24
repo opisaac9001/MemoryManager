@@ -1,0 +1,34 @@
+name: Feature request
+description: Suggest a focused improvement to Memory Manager
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: If the idea is still exploratory, start in GitHub Discussions. Use this form when the requested outcome is concrete enough to track as work. Features that need private APIs or administrator privileges are out of scope.
+  - type: textarea
+    id: need
+    attributes:
+      label: What problem would this solve?
+      description: Describe the user need rather than only the proposed interface.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Explain how you think the app should handle it.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and discussions for this request.
+          required: true
