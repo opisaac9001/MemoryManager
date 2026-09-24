@@ -149,4 +149,4 @@ Issues and pull requests are welcome. Please run the tests before opening a pull
 
 ## License
 
-Memory Manager is released under the [MIT License](LICENSE).
+Memory Manager's original source is free and open-source software under the [GNU Affero General Public License v3.0 only](LICENSE.md) (`AGPL-3.0-only`). Commercial use and paid redistribution are permitted, provided the AGPL's source-disclosure, notice, and reciprocal-licensing requirements are met. See [NOTICE.md](NOTICE.md) for attribution.
