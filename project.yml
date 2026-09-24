@@ -1,0 +1,56 @@
+name: MemoryManager
+options:
+  bundleIdPrefix: com.isaaclamb
+  deploymentTarget:
+    macOS: "14.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+targets:
+  MemoryManager:
+    type: application
+    platform: macOS
+    sources:
+      - MemoryManager
+    info:
+      path: MemoryManager/Info.plist
+      properties:
+        CFBundleDisplayName: Memory Manager
+        CFBundleName: Memory Manager
+        CFBundleShortVersionString: "3.3.1"
+        CFBundleVersion: "11"
+        LSApplicationCategoryType: public.app-category.utilities
+        LSMultipleInstancesProhibited: true
+        NSHighResolutionCapable: true
+        NSPrincipalClass: NSApplication
+        NSSupportsAutomaticTermination: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.isaaclamb.MemoryManager
+        PRODUCT_NAME: MemoryManager
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_IDENTITY: "-"
+        ENABLE_HARDENED_RUNTIME: true
+        GENERATE_INFOPLIST_FILE: false
+  MemoryManagerTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - MemoryManagerTests
+    dependencies:
+      - target: MemoryManager
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.isaaclamb.MemoryManagerTests
+        GENERATE_INFOPLIST_FILE: true
+
+schemes:
+  MemoryManager:
+    build:
+      targets:
+        MemoryManager: all
+        MemoryManagerTests: [test]
+    test:
+      targets:
+        - MemoryManagerTests
